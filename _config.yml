@@ -1,0 +1,18 @@
+# Site settings
+
+title: Research Blog
+header-img: img/home-bg.jpg
+email: your-email@yourdomain.com
+description: "Multiscale Materials Modeling in MINED, Georgia Tech"
+baseurl: "/research-blog"
+url: "http://mined-simulations.github.io"
+github_username:  mined-simulations
+project_repository: research-blog
+
+# Build settings
+# Don't change these variables
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
