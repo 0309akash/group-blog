@@ -24,10 +24,10 @@ We are going to accept the settings given in Example 1 so that we only need to m
 - **Boundary conditions** input file specifies velocity gradient tensor and Cauchy stress tensor. The components of the velocity gradient and stress tensors are enforced through binary matrices `IUDOT` and `ISCAU`, respectively (1 is on, 0 is off). In Example 1, uniaxial tension in Z direction is defined through a velocity gradient tensor with $$ L_{11} = -0.5 $$, $$L_{22} = -0.5 $$, $$L_{33} = 1.0 $$ and zero off-diagonal components. Since we enforce the velocity gradient here, all components of `IUDOT` are 1, whereas all components of `ISCAU` are 0. Finally, uniaxial tension in this example is performed up to von Mises strain of 1.0 in 50 increments, which is specified in the first line of the BC input file. 
 
 A screenshot of `vpsc.in` file provided for Example 1 (should be available as `vpsc7in.t` in `ex_01_FCC` folder). 
-![Master input file](https://www.flickr.com/photos/131459730@N05/19405629650/in/album-72157655306265309/)
+![Master input file](https://farm1.staticflickr.com/319/19405629650_79f685b257_o_d.png)
 
 Illustration of arrangement of the input files that corresponds to the `vpsc.in` shown above.
-![Arrangment of input files](https://www.flickr.com/photos/131459730@N05/18971038634/in/album-72157655306265309/)
+![Arrangment of input files](https://farm1.staticflickr.com/264/18971038634_5cbcb514ef_o_d.png)
 
 ## Running simulation
 
@@ -84,7 +84,7 @@ figure; plotIPDF(ori,zvector)
 > **Tip:** inverse pole figure might be oriented in an unexpected way: (111) pointing west instead of north. To "fix" this, run command `plotx2east` prior to plotting or, in existing Figure window, go to MTEX -> X axis direction -> East.
 
 The result of plotting discrete orientations in a pole figure and inverse pole figure.
-![Discrete orientations](https://www.flickr.com/photos/131459730@N05/19586693292/in/album-72157655306265309/)
+![Discrete orientations](https://farm4.staticflickr.com/3831/19586693292_1d52d6bcf4_o_d.png)
 
 Next, to make continuous plots, we need to estimate orientation distribution function (ODF). In MTEX, ODFs can be calculated from a set of discrete orientations by `calcODF` function:
 
@@ -100,7 +100,7 @@ figure; plotIPDF(odf,zvector)
 {% endhighlight %}
 
 The result of plotting ODF in a pole figure and inverse pole figure.
-![odf](https://www.flickr.com/photos/131459730@N05/19586693292/in/album-72157655306265309/)
+![Orientation distribution function](https://farm4.staticflickr.com/3678/19405629990_3c57394a4b_o_d.png)
 
 Since Example 1 of the VPSC manual features predictions of texture and stresses with different interaction schemes: Full Constraint (aka Taylor), Affine, Secant, Tangent, and others, the reader is encouraged to run the simulations with these different settings and compare the predictions with those in the manual. The interaction schemes can be set in the main input file (`vpsc.in`) by choosing the desired value for `interaction` variable.
 
