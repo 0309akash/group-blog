@@ -1,14 +1,18 @@
 ---
 layout:     post
-title:      Post Headline
-date:       2015-01-01 12:00:00
+title:      Post Example
+date:       2015-07-01 12:00:00
 author:     Materials Innovation
+tags: 		
 ---
+
 <!-- Start Writing Below in Markdown -->
 
 #Headers:
 
 # Header 1
+
+{{page.json}}
 
 ## Header 2
 
@@ -47,6 +51,8 @@ author:     Materials Innovation
 
 #Images:
 
+Hover your pointer over the image to expand the view.
+
 ![Description](http://img3.wikia.nocookie.net/__cb20140102180853/fairytail/images/5/5b/Logo_Fairy_Tail_right.png)
 
 #Code:
@@ -55,8 +61,8 @@ Inline `code`.
 
 {% highlight python %}
 import numpy as np
-def _set_colors():
-    HighRGB = np.array([26, 152, 80]) / 255.
+def hello_world():
+    print('Hello World!'')
 {% endhighlight %}
 
 #MathJax
@@ -80,7 +86,30 @@ column  | short | B | C
 
 ---
 
-#HTML
+# HTML
 
 Can write the whole post or sections in HTML for very specific needs. [For the advanced user or the code savvy.]
+
+# Customized and Advanced Functionality
+
+Head over to the [documentation page](http://matin-hub.github.io/ppguide/) for tutorials on some basic html formatting and some extensions you can use for cool stuff like interactive 3D visualizations.
+
+# Some HTML Functionality
+
+## Color and Alignment
+
+<p align="center">This text is centered.</p>
+
+<p style="color:red">This is a red text with <span style="color:blue">blue</span> and <span style="color:green">green</span> inline text.</p>
+
+# Some Advanced Features
+
+## Data Projector
+
+<embed src="http://matin-hub.github.io/project-pages/projectors/projector0001" height="500px" width="100%">
+
+## STL
+
+<div align="center"><script src="https://embed.github.com/view/3d/matin-hub/project-pages/gh-pages/img/stl/test.stl"></script></div>
+
 
